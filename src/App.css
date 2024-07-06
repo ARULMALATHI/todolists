@@ -1,0 +1,108 @@
+/* variables */
+:root{
+  --primary: #FFC636;
+  --secondary: #0a5b4c;
+}
+
+/* reset */
+body,p,a,ul,li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
+/* base styles */
+body{
+  background: var(--secondary);
+  overflow-x: hidden;
+}
+.button{
+  color: #f7f0f0;
+  display: inline-block;
+  font-size: 2rem;
+  margin-left: 14px;
+  margin-bottom: -12px;
+}
+.button:hover{
+  color: #9893D8;
+  
+  
+}
+
+input{
+  background: rgba(255,255,255,0.05);
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 2px solid #9893D8;
+  color: #f2f2f2;
+  font-size: 1em;
+}
+
+.error{
+  color: rgb(187, 30, 30);
+  text-align: left;
+  margin-left: 2px;
+}
+
+/* fonts */
+body{
+  color: #f2f2f2;
+}
+
+/* mobile styles */
+.App{
+  margin: 5%;
+}
+.form{
+  text-align: center;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  box-sizing: border-box;
+}
+.todos{
+  margin-top: 20px;
+}
+.todos li{
+  margin-top: 10px;
+  background-color: #6767ab;
+  padding: 3%;
+  box-shadow: 1px 2px 2px honeydew;
+  cursor: pointer;
+}
+.content{
+  grid-column: 1/8;
+}
+.todo-action{
+  display: flex;
+  font-size: 1.5em
+}
+/* small tablet styles */
+@media screen and (min-width: 620px){
+  input{
+    width: 300px;
+  }
+  .todos li{
+    margin: 10px 20%;
+    padding: 2%;
+  }
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px){
+  .todos li{
+    margin: 10px 25%;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .todos li{
+    margin: 10px 33%;
+    padding: 1%;
+  }
+}
